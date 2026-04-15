@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="estilos/style.css">
+  <script src="https://kit.fontawesome.com/3261aa908b.js" crossorigin="anonymous"></script>
     <title>Portfólio Alex Sandro</title>
 </head>
 <body>
    <header>
   <nav id="menu">
     <ul>
-    <li><a href="#">video</a></li>
-    <li><a href="#">skills</a></li>
-    <li><a href="#">formacao</a></li>
-    <li><a href="#">projeto</a></li>
-    <li><a href="#">lua</a></li>
+    <li><a href="#"><i class="fa-solid fa-video"></i></a></li>
+    <li><a href="#"><i class="fa-solid fa-brain"></i></a></li>
+    <li><a href="#"><i class="fa-solid fa-graduation-cap"></i></a></li>
+    <li><a href="#"><i class="fa-solid fa-trowel-bricks"></i></a></li>
+    <li><a href="#"><i class="fa-solid fa-moon"></i></a></li>
     </ul>
   </nav>
    </header> 
@@ -22,8 +23,47 @@
     <section id="ficha">
     <img class="foto" src="imagens/Alex.jpg" alt="alex">
     <h1>Alex Sandro</h1>
-    <p>Estudande de Ciéncia da computação e Programação e TI , Densenvolvimento wab , inteligência artificial e HTML , CSS E Javascript . Apaixonado por tecnologia em busca de novo desafio... </p>
-    
+    <p class="paragrafo">Estudande de Ciéncia da computação e Programação e TI , Densenvolvimento wab , inteligência artificial e HTML , CSS E Javascript . Apaixonado por tecnologia em busca de novo desafio... </p>
+    <div id="social">
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-github"></i></a>
+      <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="#"><i class="fa-brands fa-discord"></i></a>
+
+    </div>
+    </section>
+    <section id="detalhes">
+      <article id="video">
+    <h2><i class="fa-solid fa-handshake"></i> Deixe me Apresentar</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/u9HhnWQGwUo?si=xB6z_7B2Rd_X2iBz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+     </article> <!--fim do video-->
+
+     <article id="skills">
+      <h2><i class="fa-solid fa-brain"></i> Minha Skills</h2>
+      <div id="skill-container">
+        <div class="item">
+         <div class="info">
+          <span class="nome">
+            HTML
+          </span>
+            <span class="porcent">
+            70%
+          </span>
+          </div> <!--div info-->
+
+          <div class="barra">
+           <div class="progresso" style="width: 70%;"></div>
+          </div> <!--div barra-->
+
+        
+        </div> <!--div item-->
+      </div> <!--div skills container-->
+
+     </article>
+
     </section>
 
     
