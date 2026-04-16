@@ -13,11 +13,34 @@
     --secundario:#0a0f1c;
     --texto:#aab0d6;
 }
+body.dark-mode {
+  --principaltitulos: #0f172a;
+  --fundobotoes: #93c5fd;
+  --destaque: #eff6ff;
+  --titulos: #3b82f6;
+  --secundario: #ffffff;
+  --texto:#000000 ;
+
+}
+#toggleTheme i {
+  transition: color 0.3s;
+}
+
+/* 🌙 Lua (modo claro) */
+#toggleTheme i.fa-moon {
+  color: #fde68a; /* cinza azulado suave */
+}
+
+/* ☀️ Sol (modo escuro) */
+#toggleTheme i.fa-sun {
+  color: #fde68a; /* amarelo bonito */
+}
 body{
     background-color: var(--secundario);
     color: var(--texto);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    line-height: 1.5em;
+   transition: all 0.5s ease;
 }
 header{
     background-color: var(--principaltitulos);
@@ -116,6 +139,7 @@ article{
 article h2{
     color: var(--titulos);
     margin-bottom: 10px;
+    font-size: 1.5em;
 }
 article#video .video-container{
     position: relative;
@@ -211,6 +235,12 @@ article#video .video-container{
     object-fit:cover ;
     overflow: hidden;
     border-radius: 8px;
+}
+button {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   main{
