@@ -183,3 +183,30 @@ article#video .video-container{
     text-decoration: none;
   color: var(--fundobotoes);
 }
+#projeto-container{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+#projeto-container .projeto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--secundario); 
+    padding: 10px;
+    border-radius: 8px;
+   border-left: 5px solid var(--principaltitulos);
+   transition: border-color 0.5s ,  border-left-width 0.5s  ;
+}
+#projeto-container .projeto:hover{
+    border-color: var(--fundobotoes);
+    border-left-width: 15px;
+    cursor: pointer;
+}
+#projeto-container .ft{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit:cover ;
+    overflow: hidden;
+    border-radius: 8px;
+}
